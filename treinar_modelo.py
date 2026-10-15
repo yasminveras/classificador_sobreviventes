@@ -43,7 +43,7 @@ pipeline_final = Pipeline(steps=[
 # Treina o pipeline inteiro com todos os dados disponíveis
 pipeline_final.fit(X, y)
 
-# Salva o pipeline treinado direto na pasta models/, igual o professor faz
+# Salva o pipeline treinado direto na pasta models/
 with open('models/modelo_final.pkl', 'wb') as f:
     pickle.dump(pipeline_final, f)
 
